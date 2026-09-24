@@ -1,0 +1,233 @@
+{
+  "valueDeals": [
+    {
+      "id": 1,
+      "name": "Apollo Pharmacy Activated Charcoal Soap, 250 gm",
+      "price": 99.4,
+      "mrp": 177.5,
+      "discount": 44,
+      "image": "https://images.apollo247.in/pub/media/catalog/product/a/p/apa0097_1-sep2023.jpg?tr=q-80,f-webp,w-150,dpr-1,c-at_max"
+    },
+    {
+      "id": 2,
+      "name": "Apollo Essentials Aqua Blue Hand Wash, 500 ml",
+      "price": 99.2,
+      "mrp": 160,
+      "discount": 38,
+      "image": "https://images.apollo247.in/pub/media/catalog/product/p/d/pdpimages_apollo_essentials_bluehandwash_2_1.png?tr=q-60,f-webp,w-100,dpr-1,c-at_max"
+    },
+    {
+      "id": 3,
+      "name": "Apollo Essentials Refreshing Body Wash",
+      "price": 100,
+      "mrp": 200,
+      "discount": 50,
+      "image": "https://images.apollo247.in/pub/media/catalog/product/a/p/apo0159_front.jpg?tr=q-60,f-webp,w-100,dpr-1,c-at_max"
+    },
+    {
+      "id": 4,
+      "name": "Apollo Life Premium Citrus Refreshing Wet Wipes",
+      "price": 99.2,
+      "mrp": 160,
+      "discount": 38,
+      "image": "https://images.apollo247.in/pub/media/catalog/product/a/p/apr0111_1-qwerf.jpg?tr=q-60,f-webp,w-150,dpr-1,c-at_max"
+    },
+    {
+      "id": 5,
+      "name": "Apollo Life Aloe Vera Skin Care Gel, 200 gm",
+      "price": 99.2,
+      "mrp": 160,
+      "discount": 38,
+      "image": "https://images.apollo247.in/pub/media/catalog/product/a/p/apa0089_1-sep2023.jpg?tr=q-60,f-webp,w-100,dpr-1,c-at_max"
+    },
+    {
+      "id": 6,
+      "name": "Apollo Essentials Sandal Soap, 250 gm",
+      "price": 99.4,
+      "mrp": 177.5,
+      "discount": 44,
+      "image": "https://images.apollo247.in/pub/media/catalog/product/a/p/ape0161-1-.jpg?tr=q-60,f-webp,w-150,dpr-1,c-at_max"
+    }
+  ],
+
+  "minimum50Off": [
+    {
+      "id": 7,
+      "name": "Nivea Men Fresh Active Deodorant Spray, 150 ml",
+      "price": 149.5,
+      "mrp": 299,
+      "discount": 50,
+      "image": "https://images.apollo247.in/pub/media/catalog/product/n/i/niv0123_2_1.jpg?tr=q-60,f-webp,w-50,dpr-1,c-at_max"
+    },
+    {
+      "id": 8,
+      "name": "Lacto Calamine SPF 50 PA+++ UVA/UVB Sunscreen",
+      "price": 199.5,
+      "mrp": 399,
+      "discount": 50,
+      "image": "https://images.apollo247.in/pub/media/catalog/product/L/A/LAC0550_1-AUG23_1.jpg?tr=q-60,f-webp,w-50,dpr-1,c-at_max"
+    },
+    {
+      "id": 9,
+      "name": "Dabur Red Toothpaste Family Pack 350 gm",
+      "price": 175,
+      "mrp": 350,
+      "discount": 50,
+      "image": "https://images.apollo247.in/pub/media/catalog/product/0/3/0328_dabur_rtp_350g_carton.jpg?tr=q-60,f-webp,w-50,dpr-1,c-at_max"
+    },
+    {
+      "id": 10,
+      "name": "Garnier Bright Complete Vitamin C Face Wash 150 ml",
+      "price": 189.5,
+      "mrp": 379,
+      "discount": 50,
+      "image": "https://images.apollo247.in/pub/media/catalog/product/g/a/gar0522_1_.jpg?tr=q-60,f-webp,w-50,dpr-1,c-at_max"
+    },
+    {
+      "id": 11,
+      "name": "Mamaearth Vitamin C Face Wash",
+      "price": 299.5,
+      "mrp": 599,
+      "discount": 50,
+      "image": "https://images.apollo247.in/pub/media/catalog/product/m/a/mam0465-1.jpg?tr=q-60,f-webp,w-50,dpr-1,c-at_max"
+    },
+    {
+      "id": 12,
+      "name": "Lakme Blush & Glow Hydrating Strawberry Face Wash",
+      "price": 245,
+      "mrp": 490,
+      "discount": 50,
+      "image": "https://images.apollo247.in/pub/media/catalog/product/l/a/lak0731_1.jpg?tr=q-60,f-webp,w-50,dpr-1,c-at_max"
+    }
+  ],
+  "hotsellers":[
+    {
+      "id":13,
+      "name":"Dabur Vatika Henna & Amla Health Shampoo,",
+      "price":70,
+      "mrp":140,
+      "discount":50,
+      "image": "https://images.apollo247.in/pub/media/catalog/product/l/a/lak0731_1.jpg?tr=q-60,f-webp,w-50,dpr-1,c-at_max"
+
+      
+    },
+
+
+     {
+      "id":14,
+      "name":"Loreal Total Reapair Serum,80 ml",
+      "price":399,
+      "mrp":899,
+      "discount":50,
+      "image":"https://images.apollo247.in/pub/media/catalog/product/l/o/lor0419_1_.jpg?tr=q-80,f-webp,w-150,dpr-1,c-at_max"
+      
+    },
+
+
+     {
+      "id":15,
+      "name":"Apollo Pharmacy Charcoal Slim Soft",
+      "price":99.6,
+      "mrp":249,
+      "discount":60,
+      "image":"https://images.apollo247.in/pub/media/catalog/product/a/p/apc0080-_1__1.jpg?tr=q-80,f-webp,w-150,dpr-1,c-at_max"
+      
+    },
+
+
+     {
+      "id":16,
+      "name":"The Man Company Sky Eau De Perfume,50",
+      "price":187.25,
+      "mrp":749,
+      "discount":75,
+      "image":"https://images.apollo247.in/pub/media/catalog/product/t/m/tmc0003-1.jpg?tr=q-80,f-webp,w-150,dpr-1,c-at_max"
+      
+    },
+
+     {
+      "id":17,
+      "name":"Mamaearth Rosemary Anti-Hair Fall Shampo",
+      "price":299.5,
+      "mrp":599,
+      "discount":50,
+      "image":"https://images.apollo247.in/pub/media/catalog/product/m/a/mam0487-1.jpg?tr=q-80,f-webp,w-150,dpr-1,c-at_max"
+      
+    },
+
+
+     {
+      "id":18,
+      "name":"Lakme Blush & Glow Hyadrating StrawBerry",
+      "price":245,
+      "mrp":490,
+      "discount":50,
+      "image":"https://images.apollo247.in/pub/media/catalog/product/l/a/lak0731_1.jpg?tr=q-80,f-webp,w-150,dpr-1,c-at_max"
+      
+    }
+
+
+  ],
+
+  "skincares":[
+    {
+      "id":19,
+      "name":"CaraVe Moisturising",
+      "price":1716,
+      "mrp":1950,
+      "discount":12,
+      "image":"https://images.apollo247.in/pub/media/catalog/product/c/e/cer0553_1_.jpg?tr=q-80,f-webp,w-150,dpr-1,c-at_max"
+    },
+
+     {
+      "id":20,
+      "name":"careVe Foaming Cleanser 473 ml",
+      "price":1583.12,
+      "mrp":1799,
+      "discount":12,
+      "image":"https://images.apollo247.in/pub/media/catalog/product/c/e/cer0552_1__1.jpg?tr=q-80,f-webp,w-150,dpr-1,c-at_max"
+    },
+
+     {
+      "id":21,
+      "name":"CeraVe Moisturising Cream 454 gm | Ceramides & Hyaluronic Acid | Provides Long Lasting Hydration | Non Greasy | For Dry to Very Dry Skin",
+      "price":1847.12,
+      "mrp":2099,
+      "discount":12,
+      "image":"https://images.apollo247.in/pub/media/catalog/product/c/e/cer0558_1_.jpg?tr=q-60,f-webp,w-150,dpr-1,c-at_max"
+    },
+
+
+     {
+      "id":22,
+      "name":"CeraVe Hydrating Cleanser 236 ml",
+      "price":719.1,
+      "mrp":799,
+      "discount":10,
+      "image":"https://images.apollo247.in/pub/media/catalog/product/c/e/cer0550_1_.jpg?tr=q-60,f-webp,w-150,dpr-1,c-at_max"
+    },
+
+
+     {
+      "id":22,
+      "name":"CeraVe Hydrating Cleanser 236 ml",
+      "price":1055.12,
+      "mrp":1199,
+      "discount":17,
+      "image":"https://images.apollo247.in/pub/media/catalog/product/c/e/cer0551_1_.jpg?tr=q-60,f-webp,w-150,dpr-1,c-at_max"
+    },
+
+
+     {
+      "id":22,
+      "name":"CeraVe PM Facial Moisturising Lotion 52 ml ",
+      "price":1209,
+      "mrp":1300,
+      "discount":7,
+      "image":"https://images.apollo247.in/pub/media/catalog/product/c/e/cer0545_1_.jpg?tr=q-60,f-webp,w-150,dpr-1,c-at_max"
+    }
+
+
+
+  ]
+}

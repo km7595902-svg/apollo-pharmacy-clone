@@ -1,0 +1,694 @@
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   PAGE / SCROLL
+========================================================= */
+
+html {
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    background: #fff;
+
+    overflow-x: hidden;
+}
+
+
+/* =========================================================
+   TOP NAVBAR
+========================================================= */
+
+.navbar {
+    width: 100%;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 8%;
+    gap: 25px;
+
+    background: #fff;
+    border-bottom: 1px solid #eee;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 5000;
+}
+
+
+/* Logo */
+
+.logo {
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+}
+
+.logo img {
+    width: 70px;
+    height: auto;
+    display: block;
+}
+
+
+/* Location */
+
+.location {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    min-width: 190px;
+}
+
+.location > i {
+    color: #075d63;
+    font-size: 20px;
+}
+
+.location-text {
+    display: flex;
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+.location-text span {
+    font-size: 12px;
+    color: #777;
+}
+
+.location-text strong {
+    font-size: 14px;
+    color: #d64b4b;
+}
+
+
+/* Search */
+
+.doctor-search {
+    height: 42px;
+
+    flex: 1;
+    max-width: 615px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 18px;
+    gap: 15px;
+
+    background: #f8f8f8;
+
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.doctor-search i {
+    color: #222;
+    font-size: 17px;
+}
+
+.doctor-search input {
+    width: 100%;
+    height: 100%;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    font-size: 14px;
+}
+
+
+/* Login */
+
+.login-btn {
+    margin-left: auto;
+
+    height: 42px;
+
+    padding: 0 16px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    background: #fff;
+
+    border: 1px solid #08746e;
+    border-radius: 8px;
+
+    color: #075d63;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    flex-shrink: 0;
+}
+
+.login-btn i {
+    font-size: 25px;
+}
+
+
+/* =========================================================
+   SECOND NAVBAR
+========================================================= */
+
+.main-nav {
+    position: fixed;
+
+    top: 60px;
+    left: 0;
+
+    width: 100%;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 42px;
+
+    background: #fff;
+
+    border-bottom: 1px solid #eee;
+
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+
+    z-index: 4999;
+}
+
+.nav-link {
+    height: 50px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+
+    text-decoration: none;
+
+    color: #222;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+.nav-link:hover {
+    color: #087f7a;
+}
+
+.nav-link.active {
+    color: #087f7a;
+}
+
+.nav-link.active::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+
+    bottom: 7px;
+
+    height: 2px;
+
+    background: #087f7a;
+}
+
+.new-badge {
+    padding: 3px 7px;
+
+    background: #e4f6f5;
+
+    color: #277e7a;
+
+    font-size: 11px;
+
+    border-radius: 2px;
+}
+
+
+/* =========================================================
+   MAIN HEALTH SECTION
+========================================================= */
+
+.health-section {
+    width: 84%;
+    max-width: 1280px;
+
+    margin: 0 auto;
+
+    /*
+       Navbar = 60px
+       Second navbar = 50px
+       Total = 110px
+    */
+    padding-top: 140px;
+    padding-bottom: 60px;
+
+    min-height: 100vh;
+
+    height: auto;
+
+    overflow: visible;
+}
+
+
+/* =========================================================
+   SECTION HEADER
+========================================================= */
+
+.section-header {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 18px;
+}
+
+.section-header h2 {
+    font-size: 21px;
+
+    font-weight: 700;
+
+    color: #111;
+}
+
+.section-header a {
+    text-decoration: none;
+
+    color: #087b9a;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+.section-header a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   DOCTOR CREATED HEALTH CHECKS
+========================================================= */
+
+.health-checks {
+    width: 100%;
+
+    margin-bottom: 38px;
+}
+
+.health-grid {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(6, 1fr);
+
+    gap: 15px 19px;
+}
+
+
+/* Health Card */
+
+.health-card {
+    height: 58px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 7px 12px;
+
+    background: #fff;
+
+    border: 1px solid #e5e5e5;
+
+    border-radius: 11px;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.health-card:hover {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+
+    transform: translateY(-2px);
+}
+
+
+/* Health Icon */
+
+.health-icon {
+    width: 42px;
+    height: 42px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 29px;
+}
+
+.health-card span {
+    font-size: 14px;
+
+    line-height: 19px;
+
+    color: #333;
+}
+
+
+/* =========================================================
+   TOP BOOKED TESTS
+========================================================= */
+
+.booked-tests {
+    width: 100%;
+
+    margin-bottom: 32px;
+}
+
+.test-grid {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+
+/* Test Card */
+
+.test-card {
+    min-height: 162px;
+
+    padding: 16px;
+
+    background: #fff;
+
+    border: 1px solid #e2e2e2;
+
+    border-radius: 12px;
+
+    position: relative;
+
+    transition: 0.2s ease;
+}
+
+.test-card:hover {
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.09);
+
+    transform: translateY(-1px);
+}
+
+
+/* Test Top */
+
+.test-top {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 12px;
+}
+
+.test-icon {
+    width: 72px;
+    height: 74px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #e4e4e4;
+
+    border-radius: 10px;
+
+    font-size: 36px;
+}
+
+.test-info {
+    flex: 1;
+
+    min-width: 0;
+}
+
+.test-info h3 {
+    font-size: 15px;
+
+    line-height: 19px;
+
+    color: #222;
+
+    margin-bottom: 4px;
+}
+
+.test-info p {
+    font-size: 13px;
+
+    color: #777;
+}
+
+
+/* Guarantee */
+
+.guarantee {
+    display: inline-block;
+
+    margin-top: -12px;
+
+    margin-left: 84px;
+
+    padding: 4px 7px;
+
+    background: #f2e7dd;
+
+    color: #222;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    border-radius: 2px;
+}
+
+
+/* Test Bottom */
+
+.test-bottom {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-top: 10px;
+}
+
+.price {
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    white-space: nowrap;
+}
+
+.price strong {
+    font-size: 20px;
+
+    color: #222;
+}
+
+.price del {
+    font-size: 10px;
+
+    color: #777;
+}
+
+.price span {
+    font-size: 12px;
+
+    font-weight: 700;
+
+    color: #159447;
+}
+
+
+/* Add Button */
+
+.test-bottom button {
+    width: 88px;
+    height: 33px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #137b94;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.test-bottom button:hover {
+    background: #0d667b;
+}
+
+
+/* =========================================================
+   BOTTOM OPTIONS
+========================================================= */
+
+.bottom-options {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+
+    margin-top: 10px;
+}
+
+.option-card {
+    height: 92px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 15px 22px;
+
+    border-radius: 12px;
+
+    position: relative;
+}
+
+.upload-card {
+    background: #e3f8f8;
+}
+
+.report-card {
+    background: #e5edff;
+}
+
+
+/* Option Icon */
+
+.option-icon {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 38px;
+
+    margin-right: 18px;
+
+    flex-shrink: 0;
+}
+
+.option-card h2 {
+    font-size: 20px;
+
+    color: #111;
+}
+
+.arrow {
+    position: absolute;
+
+    right: 23px;
+
+    font-size: 20px;
+
+    color: #111;
+}
+
+
+/* =========================================================
+   SCROLL FIX
+========================================================= */
+
+main {
+    display: block;
+
+    width: 100%;
+
+    height: auto !important;
+
+    min-height: 100vh;
+
+    overflow: visible !important;
+}
+

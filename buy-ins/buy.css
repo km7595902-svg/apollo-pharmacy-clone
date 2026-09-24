@@ -1,0 +1,719 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   PAGE / SCROLL
+========================================================= */
+
+html {
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    background: #fff;
+
+    overflow-x: hidden;
+}
+
+
+
+
+
+
+.navbar {
+    width: 100%;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 8%;
+    gap: 25px;
+
+    background: #fff;
+    border-bottom: 1px solid #eee;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+  
+}
+
+.hero1{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-left: 30px;
+}
+
+
+
+/* Location */
+
+.location {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    min-width: 190px;
+}
+
+
+
+.location-text {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.location-text span {
+    font-size: 12px;
+    color: gray;
+    
+}
+
+.location-text strong {
+    font-size: 14px;
+    color:#075d63;
+    font-weight: 500;
+}
+
+
+/* Logo */
+
+.logo {
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+}
+
+.logo img {
+    width: 140px;
+    height: auto;
+    display: block;
+}
+
+
+
+.login-btn {
+  
+
+    height: 42px;
+
+    padding: 0 16px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    background: #fff;
+
+    border: 1px solid #08746e;
+    border-radius: 8px;
+
+    color: #075d63;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    flex-shrink: 0;
+}
+
+.login-btn i {
+    font-size: 25px;
+}
+
+
+
+
+/* =========================================================
+   SECOND NAVBAR
+========================================================= */
+
+.main-nav {
+    position: fixed;
+
+    top: 60px;
+    left: 0;
+
+    width: 100%;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 110px;
+
+    background: #fff;
+
+    border-bottom: 1px solid #eee;
+
+    z-index: 4999;
+}
+
+.nav-link {
+    height: 50px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+
+    text-decoration: none;
+
+    color: #222;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+.nav-link:hover {
+    color: #106c89;;
+}
+
+.nav-link.active {
+    color: #106c89;;
+}
+
+.nav-link.active::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+
+    bottom: 7px;
+
+    height: 2px;
+
+    background: #106c89;
+
+}
+
+/* section banner */ 
+
+.banner{
+    width: 100%;
+    height: 190px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 30px;
+
+}
+
+.banner img{
+    width: 100%;
+    height: 260px;
+    object-fit: contain;
+    object-position: center;
+
+    display: block;
+}
+
+
+
+/* ===============================
+   MAIN SECTION
+================================ */
+
+.insurance-section {
+    width: 100%;
+    min-height: 475px;
+
+    background: #fffaf3;
+
+    padding: 28px 0 0;
+}
+
+
+.insurance-container {
+    width: 82%;
+    max-width: 1280px;
+
+    height: 445px;
+
+    margin: auto;
+
+    display: flex;
+    align-items: stretch;
+
+    position: relative;
+}
+
+
+/* ===============================
+   LEFT SIDE
+================================ */
+
+.insurance-left {
+    width: 62%;
+
+    position: relative;
+
+    padding-top: 38px;
+}
+
+
+.small-title {
+    font-size: 16px;
+
+    letter-spacing: 4px;
+
+    font-weight: 700;
+
+    color: #c49a25;
+
+    margin-bottom: 10px;
+}
+
+
+.insurance-left h1 {
+    font-size: 29px;
+
+    color: #f15b2a;
+
+    font-weight: 700;
+
+    margin-bottom: 12px;
+}
+
+
+.line {
+    width: 445px;
+
+    height: 1px;
+
+    background: #ded8cf;
+
+    margin-bottom: 10px;
+}
+
+
+.insurance-left h2 {
+    font-size: 27px;
+
+    line-height: 1.35;
+
+    font-weight: 700;
+
+    color: #111;
+
+    margin-bottom: 10px;
+}
+
+
+/* ===============================
+   FAMILY IMAGE
+================================ */
+
+.family-image {
+    position: absolute;
+
+    left: 360px;
+    bottom: 0;
+
+    width: 680px;
+    height: 500px;
+   
+    display: flex;
+
+    align-items: flex-end;
+    
+    justify-content: center;
+
+    overflow: visible;
+
+    z-index: 2;
+
+}
+
+
+.family-image img {
+    width: 100%;
+    height: 100%;
+    margin-right: 600px; 
+    
+    object-fit: contain;
+
+    object-position: center bottom;
+
+    display: block;
+}
+
+
+/* ===============================
+   RIGHT FORM
+================================ */
+
+.insurance-form {
+    width: 490px;
+
+    height: 432px;
+
+    background: white;
+
+    border: 1px solid #ddd;
+
+    border-radius: 12px;
+
+    padding: 22px 16px;
+
+    position: relative;
+
+    z-index: 5;
+}
+
+
+/* Form Heading */
+
+.insurance-form h3 {
+    text-align: center;
+
+    font-size: 17px;
+
+    margin-bottom: 20px;
+}
+
+
+.insurance-form h3 span {
+    color: #f15b2a;
+}
+
+
+/* ===============================
+   LABEL
+================================ */
+
+.form-section label,
+.member-heading label {
+    display: block;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    color: #333;
+
+    margin-bottom: 7px;
+}
+
+
+/* ===============================
+   GENDER
+================================ */
+
+.gender-box {
+    width: 140px;
+
+    height: 35px;
+
+    display: flex;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    margin-bottom: 17px;
+}
+
+
+.gender {
+    width: 50%;
+
+    border: none;
+
+    background: white;
+
+    font-size: 13px;
+
+    cursor: pointer;
+}
+
+
+.gender.active {
+    background: #111;
+
+    color: white;
+
+    margin: 3px;
+
+    border-radius: 5px;
+
+    width: calc(50% - 6px);
+}
+
+
+/* ===============================
+   MEMBER HEADING
+================================ */
+
+.member-heading {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 8px;
+}
+
+
+.member-heading label {
+    margin-bottom: 0;
+}
+
+
+.member-heading a {
+    text-decoration: none;
+
+    color: #ff5722;
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+
+/* ===============================
+   MEMBERS GRID
+================================ */
+
+.members-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 8px;
+
+    padding-bottom: 13px;
+
+    border-bottom: 1px dashed #ddd;
+}
+
+
+.member-card {
+    height: 50px;
+
+    border: 1px solid #e2e2e2;
+
+    border-radius: 9px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 5px 10px;
+
+    cursor: pointer;
+
+    font-size: 13px;
+
+    position: relative;
+}
+
+
+.member-card input {
+    position: absolute;
+
+    right: 9px;
+
+    top: 13px;
+
+    width: 13px;
+
+    height: 13px;
+}
+
+
+.member-avatar {
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #f5efe7;
+
+    border-radius: 9px;
+
+    font-size: 21px;
+}
+
+
+/* ===============================
+   CHILDREN
+================================ */
+
+.children-section {
+    padding-top: 12px;
+}
+
+
+.children-heading {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+
+.children-heading a {
+    color: #ff5722;
+
+    text-decoration: none;
+
+    margin-left: 18px;
+
+    font-weight: 600;
+}
+
+
+/* ===============================
+   VIEW PLANS
+================================ */
+
+.view-plans {
+    width: 100%;
+
+    height: 34px;
+
+    margin-top: 15px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #ccc;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+
+.view-plans:hover {
+    background: #147b9a;
+}
+
+
+/* ===============================
+   TERMS
+================================ */
+
+.terms {
+    font-size: 10px;
+
+    color: #777;
+
+    margin-top: 9px;
+
+    line-height: 16px;
+}
+
+
+.terms b {
+    color: #333;
+}
+
+
+/* ===============================
+   TALK TO EXPERT
+================================ */
+
+.expert {
+    position: fixed;
+
+    right: 25px;
+
+    bottom: 65px;
+
+    width: 65px;
+    height: 65px;
+
+    border-radius: 50%;
+
+    background: white;
+
+    border: 1px solid #ddd;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    z-index: 100;
+}
+
+
+.expert span {
+    font-size: 13px;
+
+    margin-bottom: 1px;
+}
+
+
+.expert small {
+    font-size: 7px;
+
+    font-weight: 700;
+}
+
+
+.expert strong {
+    font-size: 8px;
+
+    font-weight: 800;
+}

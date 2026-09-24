@@ -1,0 +1,452 @@
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    width: 100%;
+
+    min-height: 100vh;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #101313;
+
+    color: white;
+
+    overflow-x: hidden;
+
+}
+
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+.navbar {
+
+    width: 100%;
+
+    height: 74px;
+
+    background: #000;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 5.2%;
+
+    position: relative;
+
+    z-index: 1000;
+
+}
+
+
+/* =====================================================
+   LOGO
+===================================================== */
+
+.logo {
+
+    width: 100px;
+
+    height: 65px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    color: white;
+
+    font-weight: 700;
+
+}
+
+
+/* Apollo */
+
+.logo img{
+    width: 75px;
+     background-position: center;
+     
+}
+
+
+
+
+
+/* =====================================================
+   NAV MENU
+===================================================== */
+
+.nav-menu {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 42px;
+
+    margin-left: 40px;
+
+}
+
+
+.nav-menu a {
+
+    color: #eeeeee;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    font-weight: 500;
+
+    white-space: nowrap;
+
+    transition: 0.2s ease;
+
+}
+
+
+.nav-menu a:hover {
+
+    color: #e6c66d;
+
+}
+
+
+/* =====================================================
+   APPLY BUTTON
+===================================================== */
+
+.apply-btn {
+
+    margin-left: auto;
+
+    width: 148px;
+
+    height: 42px;
+
+    border-radius: 25px;
+
+    border: 2px solid #856b27;
+
+    background: linear-gradient(
+        180deg,
+        #e7d083,
+        #a88736
+    );
+
+    color: #111;
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow:
+        inset 0 1px 3px rgba(255,255,255,0.7),
+        0 0 0 2px #181818;
+
+    transition: 0.2s ease;
+
+}
+
+
+.apply-btn:hover {
+
+    transform: scale(1.03);
+
+    background: linear-gradient(
+        180deg,
+        #f2dc91,
+        #b89640
+    );
+
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero {
+
+    width: 100%;
+
+    height: 515px;
+
+    background: #111414;
+
+    overflow: hidden;
+
+}
+
+
+/* =====================================================
+   HERO CONTAINER
+===================================================== */
+
+.hero-container {
+
+    width: 100%;
+
+    max-width: 950px;
+
+    height: 100%;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+}
+
+
+/* =====================================================
+   HERO CONTENT
+===================================================== */
+
+.hero-content {
+
+    width: 500px;
+
+    padding-top: 10px;
+
+}
+
+
+/* =====================================================
+   INTRODUCING
+===================================================== */
+
+.introducing {
+
+    color: #dfc779;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 10px;
+
+}
+
+
+/* =====================================================
+   MAIN HEADING
+===================================================== */
+
+.hero-content h1 {
+
+    font-size: 24px;
+
+    font-weight: 700;
+
+    color: white;
+
+    line-height: 35px;
+
+}
+
+
+.hero-content h1 span {
+
+    color: #a98231;
+
+    font-size: 19px;
+
+    font-style: italic;
+
+    margin-left: 5px;
+
+}
+
+
+/* =====================================================
+   GOLD LINE
+===================================================== */
+
+.line {
+
+    width: 470px;
+
+    height: 1px;
+
+    background: #555;
+
+    margin: 4px 0 10px;
+
+}
+
+
+/* =====================================================
+   HEALTH FIRST TEXT
+===================================================== */
+
+.hero-content h2 {
+
+    font-size: 32px;
+
+    font-weight: 300;
+
+    color: #c6a75b;
+
+    line-height: 42px;
+
+}
+
+
+.hero-content h2 strong {
+
+    color: #e1ce8b;
+
+    font-weight: 700;
+
+}
+
+
+/* =====================================================
+   INTERESTED
+===================================================== */
+
+.interested {
+
+    color: #d9c378;
+
+    font-size: 17px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    margin-top: 13px;
+
+}
+
+
+/* =====================================================
+   HERO IMAGE
+===================================================== */
+
+.hero-image {
+
+    width: 490px;
+
+    height: 500px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    position: relative;
+
+}
+
+
+/* Card image */
+
+.hero-image img {
+
+    width: 500px;
+
+    max-width: none;
+
+    height: auto;
+
+    display: block;
+
+    object-fit: contain;
+
+    transform: translateX(-10px);
+
+}
+
+
+/* =====================================================
+   DUMMY SECTIONS
+===================================================== */
+
+
+
+/* ================= CARD VIDEO ================= */
+
+.card-video-section {
+    width: 100%;
+    padding: 22px 0;
+    background: #101313;
+}
+
+.card-video {
+    width: 990px;
+    height: 558px;
+
+    margin: 0 auto;
+
+    border: 1px solid #806523;
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    background: #101313;
+}
+
+.card-video video {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1050px) {
+
+    .card-video {
+        width: 90%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .card-video {
+        width: 94%;
+        border-radius: 14px;
+    }
+
+}
+

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <!--Header-->
+     <header class="cart-header">
+          <div class="cart-logo">
+            <img src="https://images.apollo247.in/images/pharmacy_logo.svg?tr=q-80,w-100,dpr-1,c-at_max" alt="Apollo">
+        </div>
+
+        <div class="cart-location">
+            <i class="fa-solid fa-location-dot"></i>
+
+            <div>
+                <small>Delivery Address</small>
+                <strong>Suri 731223</strong>
+            </div>
+        </div>
+         <div class="cart-header-right">
+
+            <div class="cart-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="headerCartCount">0</span>
+            </div>
+
+            <button class="login-btn">
+                Login
+                <i class="fa-regular fa-circle-user"></i>
+            </button>
+
+        </div>
+     </header>
+
+     <!--second Navber-->
+
+       <nav class="main-nav">
+        <a href="/Apollo-website/index.html" class="nav-link active">
+            Buy Medicines
+        </a>
+
+        <a href="/Apollo-website/find-doctors/find-doctors.html" class="nav-link">
+            Find Doctors
+        </a>
+
+        <a href="/Apollo-website/lab-tests/lab-test.html" class="nav-link">
+            Lab Tests
+        </a>
+
+        <a href="/Apollo-website/circle/circle.html" class="nav-link">
+            Circle Membership
+        </a>
+
+        <a href="/Apollo-website/Health/health.html" class="nav-link">
+            Health Records
+         </a>
+        <a href="/Apollo-website/credit/credit.html" class="nav-link">
+            Credit Card
+            <span class="new-badge">New</span>
+        </a>
+        <a href="/Apollo-website/buy-ins/buy.html" class="nav-link">
+            Buy Insurance
+            <span class="new-badge">New</span>
+        </a> 
+
+     </nav>   
+
+     <!--Main -->
+     <main class="cart-page">
+        <!--left-->
+        <section class="cart-left">
+              <h3>MY CART</h3>
+
+                <!-- ADDRESS -->
+
+            <div class="address-box">
+
+                <i class="fa-solid fa-paper-plane"></i>
+
+                <span>
+                    Add address to unlock extra discounts and best offers.
+                </span>
+
+                <button>
+                    ADD ADDRESS
+                </button>
+
+            </div>
+
+              <!-- CART TITLE -->
+
+            <div class="cart-title">
+
+                <h3>
+                    <span id="itemCount">0</span>
+                    ITEM IN YOUR CART
+                </h3>
+
+                <button>
+                    ADD ITEMS
+                </button>
+
+            </div>
+
+               <!-- CART PRODUCTS -->
+
+            <div id="cartContainer"></div>
+
+        </section>
+
+          <!-- RIGHT -->
+
+        <aside class="cart-right">
+
+            <h3>OFFERS & DISCOUNTS</h3>
+
+            <div class="coupon">
+
+                <div>
+                    <i class="fa-solid fa-certificate"></i>
+
+                    <strong>Apply Coupon</strong>
+                </div>
+
+                <i class="fa-solid fa-chevron-right"></i>
+
+                <small>Login to apply coupons</small>
+
+            </div>
+
+
+            <h2>Cart Breakdown</h2>
+
+            <div class="breakdown">
+
+                <div class="breakdown-row">
+
+                    <div>
+                        <i class="fa-solid fa-receipt"></i>
+
+                        <div>
+                            <strong>Total Bill</strong>
+                            <small>Incl. charges</small>
+                        </div>
+                    </div>
+
+                    <div>
+                        <del id="totalMrp">₹0</del>
+                        <strong id="totalPrice">₹0</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="saving">
+                    You will save
+                    <strong id="savingAmount">₹0</strong>
+                    on this order.
+                </div>
+
+            </div>
+
+
+            <h3 class="payment-title">
+                Available Payment Offers
+            </h3>
+
+            <p class="payment-subtitle">
+                Offer auto-applies at checkout
+            </p>
+
+        </aside>
+
+     </main>
+     <script src="cart.js"></script>
+</body>
+</html>
